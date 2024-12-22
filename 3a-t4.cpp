@@ -3,9 +3,13 @@ using namespace std;
 int main()
 {
 int k, i = 1, sum_k = 0, number;
+again:
 cout << " Enter the amount of integers to sum = "; cin >> k;
-if (k == 0) 
-cout << " error. "; 
+if (k<=0)
+{
+cout <<"Please, enter possible amount of integers";
+goto again;
+}
 else
 {
 do {
